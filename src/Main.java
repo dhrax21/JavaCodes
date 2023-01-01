@@ -1,3 +1,4 @@
+import Sorting.InsertionSort;
 import Sorting.MergeSort;
 import Sorting.QuickSort;
 
@@ -7,15 +8,18 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
-        QuickSort q=new QuickSort();
+//        QuickSort q=new QuickSort();
 
         int[] arr={4,1,3,6,0,9};
         System.out.println("Before Sorting \n"+ Arrays.toString(arr));
 
 //        q.sort(arr,0,arr.length-1);
+//
+//        MergeSort m=new MergeSort();
+//        int[] sol=m.Msort(arr);
 
-        MergeSort m=new MergeSort();
-        int[] sol=m.Msort(arr);
+        InsertionSort s=new InsertionSort();
+        int[] sol=s.insertionSort(arr);
 
 //        Arrays.sort(arr);
         System.out.println("After Sorting \n"+ Arrays.toString(sol));
