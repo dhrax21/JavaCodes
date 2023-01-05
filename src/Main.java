@@ -1,3 +1,4 @@
+import Parenthesis.BalanceParenthesis;
 import Parenthesis.GenerateParenthesis;
 import Parenthesis.RemoveOuterParenthesis;
 
@@ -13,8 +14,8 @@ public class Main {
 //        ArrayList<String> sol = g.generate(3);
 //        System.out.println(sol);
 
-        RemoveOuterParenthesis r=new RemoveOuterParenthesis();
-        System.out.println(r.removeParenthesis("((()))"));
+//        RemoveOuterParenthesis r=new RemoveOuterParenthesis();
+//        System.out.println(r.removeParenthesis("((()))"));
 
 
 
@@ -34,5 +35,9 @@ public class Main {
 
 //        Arrays.sort(arr);
 //        System.out.println("After Sorting \n"+ Arrays.toString(sol));
+
+        BalanceParenthesis b=new BalanceParenthesis();
+        boolean ans=b.isBal("()[]{}");
+        System.out.println(ans);
     }
 }
