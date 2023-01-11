@@ -1,3 +1,4 @@
+import DynamicProgramming.Fibonacci;
 import Parenthesis.BalanceParenthesis;
 import Parenthesis.GenerateParenthesis;
 import Parenthesis.RemoveOuterParenthesis;
@@ -8,6 +9,14 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
+
+        Fibonacci fb=new Fibonacci();
+
+        System.out.println(fb.fib(30,new int[100]));
+
+
+
+
 //
 //        GenerateParenthesis g=new GenerateParenthesis();
 //
@@ -36,8 +45,8 @@ public class Main {
 //        Arrays.sort(arr);
 //        System.out.println("After Sorting \n"+ Arrays.toString(sol));
 
-        BalanceParenthesis b=new BalanceParenthesis();
-        boolean ans=b.isBal("()[]{}");
-        System.out.println(ans);
+//        BalanceParenthesis b=new BalanceParenthesis();
+//        boolean ans=b.isBal("()[]{}");
+//        System.out.println(ans);
     }
 }
