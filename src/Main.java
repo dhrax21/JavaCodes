@@ -1,4 +1,5 @@
 import DynamicProgramming.Fibonacci;
+import DynamicProgramming.LIS;
 import Parenthesis.BalanceParenthesis;
 import Parenthesis.GenerateParenthesis;
 import Parenthesis.RemoveOuterParenthesis;
@@ -10,9 +11,14 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
-        Fibonacci fb=new Fibonacci();
+//        Fibonacci fb=new Fibonacci();
+//
+//        System.out.println(fb.fib(30,new int[100]));
+        int[] nums={10,9,2,5,3,7,100,18};
+        LIS lis=new LIS();
+        int ans=lis.longestIncreasingSubSequence(nums,nums.length);
+        System.out.println(ans);
 
-        System.out.println(fb.fib(30,new int[100]));
 
 
 
