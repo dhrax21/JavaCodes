@@ -1,11 +1,12 @@
 import DynamicProgramming.Fibonacci;
 import DynamicProgramming.LIS;
 import Extra.CountAndSay;
+import Extra.Student;
 import Parenthesis.BalanceParenthesis;
 import Parenthesis.GenerateParenthesis;
 import Parenthesis.RemoveOuterParenthesis;
 
-import java.util.ArrayList;
+import java.util.*;
 
 
 public class Main {
@@ -13,7 +14,5 @@ public class Main {
         System.out.println("Hello world!");
 
 
-        CountAndSay c=new CountAndSay();
-        System.out.println(c.countSay(6));
     }
 }
