@@ -1,10 +1,18 @@
 package MultiThreading;
 
-public class Example implements Runnable{
+public class Example extends Thread{
 
     @Override
     public void run() {
-        System.out.println("thread is running");
+        for (int i = 0; i < 5; i++) {
+            System.out.println(i);
+
+            try {
+                Thread.sleep(1000);
+            }catch (InterruptedException e){
+
+            }
+        }
     }
 
 }

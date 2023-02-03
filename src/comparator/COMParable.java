@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class COMParable{
+public class COMParable implements Comparable<Student>{
 
 //    Student s1=new Student(30,"yogi");
 //    Student s2=new Student(34,"dhrax");
@@ -36,6 +36,10 @@ public class COMParable{
 //
 //        for(Student st : list){
 //        System.out.println(st.getName());
-//
+
+    @Override
+    public int compareTo(Student o) {
+        return 0;
+    }
 }
 

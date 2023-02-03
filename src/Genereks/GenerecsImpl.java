@@ -1,6 +1,6 @@
 package Genereks;
 
-public class GenerecsImpl<T extends String> {
+public class GenerecsImpl<T> {
     T obj;
 
     public GenerecsImpl() {
