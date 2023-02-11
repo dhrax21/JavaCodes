@@ -1,3 +1,4 @@
+import Extra.LargestNumber;
 import Extra.PascalTriangle;
 import immutableClass.Database;
 
@@ -7,9 +8,11 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
-        PascalTriangle p=new PascalTriangle();
-        p.printPascal(5);
-        List<Integer> list = p.getList();
-        System.out.println(list);
+        int[] nums={54,546,548,60};
+
+        LargestNumber l=new LargestNumber();
+        System.out.println(l.largestNum(nums));
+
     }
+//    6054854654
 }
