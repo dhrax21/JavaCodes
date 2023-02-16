@@ -37,4 +37,19 @@ public class PascalTriangle {
     public List<Integer> getList(){
         return pList;
     }
+    static int N=3,M=3;
+    public void printMatrix(int[][] mat,int i,int j) {
+        if (i == N - 1 && j == M - 1) {
+            System.out.println(mat[i][j]+" ");
+            return;
+        }
+        System.out.print(mat[i][j]+ " ");
+        if (j < M - 1) {
+            printMatrix(mat, i, j + 1);
+        }
+        else if (i < N - 1) {
+            printMatrix(mat, i + 1, 0);
+        }
+        System.out.println();
+    }
 }
