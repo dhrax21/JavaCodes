@@ -23,11 +23,8 @@ public class LargestNumber {
             }
         });
         StringBuilder res=new StringBuilder();
-        //after sorting if the array starts with 0
         if(conv[0].equals("0"))
             return "0";
-
-        // else
         for(int i=0;i<conv.length;i++)
         {
             res.append(conv[i]);
