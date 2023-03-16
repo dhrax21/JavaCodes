@@ -1,28 +1,21 @@
-import DynamicProgramming.UniquePaths;
-import Extra.CountAndSay;
-import Extra.LargestNumber;
-import Extra.PascalTriangle;
+import Extra.LCOMP;
+import Extra.Student;
+import Genereks.GenerecsImpl;
 import Graph.AdjacencyList;
-import Sorting.QuickSort;
-import immutableClass.Database;
+import MultiThreading.Example;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.HashMap;
+import java.util.HashSet;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
-        AdjacencyList adj=new AdjacencyList();
-        ArrayList<AdjacencyList.Edge> graph[]=new ArrayList[4];
-        adj.createGraph(graph);
+        LCOMP l=new LCOMP();
+        System.out.println(l.letterCombinations("22"));
 
-//        adj.printGraph(graph,3);
-//        adj.bfs(graph,4);
 
-          adj.dfs(graph,0,new boolean[4]);
     }
-
 
 }

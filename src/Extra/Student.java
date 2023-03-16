@@ -5,6 +5,8 @@ public class Student{
     private String name;
 
 
+
+
     public Student(int marks, String name) {
         this.marks = marks;
         this.name = name;
@@ -14,7 +16,7 @@ public class Student{
         return marks;
     }
 
-    public void setMarks(int marks) {
+    private void setMarks(int marks) {
         this.marks = marks;
     }
 
@@ -25,11 +27,6 @@ public class Student{
     public void setName(String name) {
         this.name = name;
     }
-
-//    @Override
-//    public int compareTo(Student o) {
-//        return this.marks-o.marks;
-//    }
 
     @Override
     public String toString() {
